@@ -91,6 +91,18 @@ header {
     letter-spacing: 0.1vw;
 }
 
-section:nth-child(1) {
-    background-color: red;
+@media screen and (max-width: 768px) {
+    section {
+        min-width: 100%;
+    }
+    header {
+        min-width: 100%;
+        height: 100vh;
+        background-image: url("arte linda amor.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
 }
