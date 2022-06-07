@@ -83,7 +83,6 @@ header {
     text-align: left;
     list-style: none;
     margin-top: 6vh;
-    margin-right: 20vw;
 }
 
 .datas #desc {
@@ -104,5 +103,18 @@ header {
         background-attachment: fixed;
         background-repeat: no-repeat;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+    .datas ul li {
+        gap: 0.3em;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        list-style: none;
+        margin-top: 6vh;
+        margin-right: 20vw;
+    }
+    .datas #desc {
+        font-style: italic;
+        letter-spacing: 0.1vw;
     }
 }
