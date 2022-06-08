@@ -11,14 +11,13 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
-    width: 100%;
+.parallax {
     height: 100vh;
+    width: 100%;
     background-image: url("arte linda amor.jpg");
-    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
  ::-webkit-scrollbar {
