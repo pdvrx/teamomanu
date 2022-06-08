@@ -93,7 +93,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 2em;
+    gap: 0 2em;
 }
 
 .galeria p {
@@ -117,6 +117,12 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    .center {
+        margin: 0 auto;
+        padding: 0 2%;
+        display: flex;
+        text-align: center;
+    }
     .datas ul li {
         gap: 0.3em;
         display: flex;
@@ -135,13 +141,24 @@ html {
     }
     .galeria {
         display: flex;
+        position: relative;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         justify-content: space-between;
         gap: 0em;
+        margin-left: -3%;
     }
     .foto {
         width: 10px;
         height: 20px;
         margin-bottom: 0em;
+    }
+    .galeria p {
+        margin-top: 4%;
+        font-size: 1.2em;
+        text-align: left;
+        letter-spacing: 0.2vw;
+        font-style: italic;
     }
 }
