@@ -34,7 +34,6 @@ header {
 }
 
 .center {
-    max-width: 79;
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
@@ -81,6 +80,10 @@ header {
     color: #111;
 }
 
+.datas {
+    max-width: 900px;
+}
+
 .datas ul li {
     gap: 0.3em;
     display: flex;
@@ -97,7 +100,6 @@ header {
 }
 
 .galeria {
-    max-width: 79;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -151,8 +153,8 @@ header {
         gap: 0em;
     }
     .foto {
-        height: 35em;
-        width: 30em;
+        max-width: 10px;
+        max-height: 20px;
         margin-bottom: 0em;
     }
 }
