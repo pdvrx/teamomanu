@@ -19,7 +19,6 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
  ::-webkit-scrollbar {
@@ -130,14 +129,13 @@ header {
         min-width: 100%;
     }
     header {
-        min-width: 100%;
+        width: 100%;
         height: 100vh;
         background-image: url("arte linda amor.jpg");
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     }
     .datas ul li {
         gap: 0.3em;
@@ -154,5 +152,16 @@ header {
     }
     #hifem {
         display: none;
+    }
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0em;
+    }
+    .foto {
+        height: 35em;
+        width: 30em;
+        margin-bottom: 0em;
     }
 }
