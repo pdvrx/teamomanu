@@ -11,15 +11,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.parallax {
-    height: 100vh;
-    width: 100%;
-    background-image: url("arte linda amor.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
  ::-webkit-scrollbar {
     width: 0px;
     background-color: #ece9e9;
@@ -126,9 +117,6 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    section {
-        width: 100%;
-    }
     .datas ul li {
         gap: 0.3em;
         display: flex;
@@ -152,8 +140,8 @@ html {
         gap: 0em;
     }
     .foto {
-        max-width: 10px;
-        max-height: 20px;
+        width: 10px;
+        height: 20px;
         margin-bottom: 0em;
     }
 }
