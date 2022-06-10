@@ -33,35 +33,43 @@ html {
     background-repeat: no-repeat;
 }
 
-.heart{
-    height: 70px;
-    width: 70px;
+
+.heart { 
+    position: relative; 
     background-color: #f20044;
-    position: relative;
-    transform: rotate(-45deg);
-}
+    width: 200px; 
+    height: 200px; 
+    transform: rotate(-45deg)scale(1);
+    box-shadow: -10px 10px 70px #f20044;
+    animation: heart 0.6s linear infinite;
+} 
 
 
-.heart:before{
+
+.heart::before{
+    background-color: #f20044;
+    border-radius: 50%;
     content: '';
     position: absolute;
-    height: 70px;
-    width: 70px;
-    background-color: #f20044;
     top: -50%;
-    border-radius: 50px;
+    left: 0;
+    width: 200px; 
+    height: 200px;
+    box-shadow: -10px 10px 70px #f20044;
 }
 
-.heart:after{
+.heart::after{
+    background-color: #f20044;
+    border-radius: 50%;
     content: '';
     position: absolute;
-    height: 70px;
-    width: 70px;
-    background-color: #f20044;
-    right: -50%;
-    border-radius: 50px;
+    top: 0%;
+    right: -50;
+    width: 200px; 
+    height: 200px;
+    box-shadow: -10px 10px 70px #f20044;
+    
 }
-
 
 .center {
     margin: 0 auto;
@@ -156,6 +164,7 @@ html {
     text-align: left;
     letter-spacing: 0.2vw;
     font-style: italic;
+    margin-left: 2%;
 
 }
 
@@ -171,6 +180,18 @@ html {
     height: 100%;
     object-fit: cover;
     
+}
+
+@keyframes heart {
+    0%{
+        transform: rotate(-45deg)scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg)scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg)scale(0.8);
+    }
 }
 
 /*@media screen and (max-width: 768px) {
