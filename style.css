@@ -282,6 +282,33 @@ a:hover{
     transform: scale(1.1);
 }
 
+#button{
+    margin-top: 5vh;
+    padding: 15px;
+    border:none;
+    background-color: #e04873;
+    color: #ece9e9;
+    width: 300px;
+    max-width: 80%;
+    border-radius: 50px;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.5s ease;
+}
+
+#button:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+textarea{
+    margin-top: 2.5vh;
+    border: 1px solid #e04873;
+    border-radius: 12px;
+    outline: none;
+    padding: 10px;
+}
+
 
 @keyframes zoom {
     0% {
