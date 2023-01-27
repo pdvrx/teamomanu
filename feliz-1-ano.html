@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon"href="./assets/coração.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Feliz 1 ano</title>
+</head>
+
+<body>
+    <section class="sections">
+        <div class="center">
+            <div data-aos="fade-up" data-aos-duration="1700">
+                <h1 id="tit">Hoje faz exatamente</h1>
+                <p id="int"> 1 ano desde que eu decidi te pedir em namoro, definitivamente esse momento não foi surpresa pra nenhum de nós,
+                    mas algo que eu nunca esperava é que como isso passaria tão rápido. No dia em que minha fica caiu de que nãos estariamos
+                    mais morando na mesma cidade achei que era o fim do mundo, a ideia de nem poder te ver uma vez na semana pelo menos 
+                    me assustou muito naquela hora. Parecia um desastre, o fim do mundo, mas hoje depois de uns meses digo feliz e aliviado
+                    que sobrevivi a essa tragédia, e mais feliz e aliviado ainda por poder dizer que depois de tudo que a gente passou 
+                    nesse ano eu te amo ainda mais.
+                </p>
+                <p id="int">
+                    Nesse tempo mesmo que longe eu pude te conhecer melhor e me apaixonar mais profundamente por cada versão e momento seu.
+                    Pude sentir aquela saudade que dói tanto mas que faz valer cada reencontro, que mesmo matando por dentro me enche de vida
+                    saber que alguém me faz sentir assim. Pude ficar reelembrando nossos encontros e conversar e me sentindo bobo e especial
+                    de ter você ao meu lado. E principalmente depois desse um ano não só pude, como posso dizer com toda certeza que você é o 
+                    amor da minha vida!
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sections">
+        <div class="center">
+            <div data-aos="fade-up" data-aos-duration="1700">
+                <h1 id="tit">Clique e descubra o quanto eu te amo</h1>
+                <div class="contador">
+                    <span id="contador">0</span>
+                    <button>Descubra</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        
+        var btn = document.querySelector('button')
+        console.log(btn)
+        var contador = document.getElementById('contador')
+        var interval 
+
+        btn.onclick = () => {
+
+        var value = parseFloat(contador.innerHTML)
+
+        interval = setInterval(() => {
+        value += 0.1
+
+        contador.innerHTML = Math.trunc(value.toFixed(1)) + "%"
+        }, 10);
+}
+
+    </script>
+
+</body>
+
+</html>
